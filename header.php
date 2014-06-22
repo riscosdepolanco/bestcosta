@@ -2,7 +2,7 @@
 <html>
     <head>
         <title><?php wp_title( '|', true, 'right' ); bloginfo('name'); ?></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta charset="<?php bloginfo('charset'); ?>" />
         <meta name="description" content="Website Horizontal Scrolling with jQuery" />
         <meta name="keywords" content="jquery, horizontal, scrolling, scroll, smooth"/>
         <!--link rel="stylesheet" href="css/jquery.sidr.dark.css"-->
@@ -10,6 +10,7 @@
         <link href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/jquery.sidr.dark.css" rel="stylesheet" type="text/css" />
         <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300italic,400italic,700,300|Open+Sans:400,700,300&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script-->
         <?php wp_enqueue_script('jquery'); ?>
         <?php wp_enqueue_script('fullscreenCycler',get_template_directory_uri() . '/js/jquery.fullscreenCycler.min.js', array(jquery)); ?>
         <?php wp_enqueue_script('sidr',get_template_directory_uri() . '/js/jquery.sidr.min.js', array(jquery)); ?>

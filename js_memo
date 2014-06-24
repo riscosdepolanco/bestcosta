@@ -1,0 +1,58 @@
+js correct
+
+// --HEADER--
+jQuery(function(){
+jQuery('#header').show().animate({
+width: "100%"
+},1000);
+});
+
+// --ARROW--
+jQuery(function() {
+    jQuery('ul.nav a, .arrow_r').bind('click',function(event){
+        var $anchor = jQuery(this);
+        /*
+        if you want to use one of the easing effects:
+        $('html, body').stop().animate({
+            scrollLeft: $($anchor.attr('href')).offset().left
+        }, 1500,'easeInOutExpo');
+         */
+        jQuery('html, body').stop().animate({
+            scrollLeft: jQuery($anchor.attr('href')).offset().left
+        }, 1100);
+        event.preventDefault();
+    });
+});
+
+// --CONSTRUCTION SLIDER--
+jQuery(function() {
+var i = new Array("http://localhost:8888/test/wordpress/wp-content/uploads/2014/06/full_cons_03.jpg","http://localhost:8888/test/wordpress/wp-content/uploads/2014/06/full_cons_04.jpg");
+jQuery('#fsCycler').fullscreenSlider({
+speed: 1,
+transitionSpeed: 2,
+backgroundColor: "transparent",
+images: i
+});
+});
+
+
+
+
+
+js no correct
+
+
+$(document).ready(function() {
+$('#simple-menu').sidr();
+});
+$(function(){
+setArrowFunc();//---CHECK
+$(window).resize(function(){
+setArrowFunc();//---下記setCenterFuncを実行
+})
+function setArrowFunc() {
+var windowWidth = $(window).width();
+var x = (windowWidth - 90) + "px";
+$(".arrow_r").css('left',x);
+}
+});

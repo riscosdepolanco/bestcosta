@@ -27,15 +27,16 @@
         }
     </style>
     <body>
-        <?php wp_nav_menu( array ( 'theme_location' => 'header-navi' ) ); ?>
-        <!--div id="sidr">
+        <!--?php wp_nav_menu( array ( 'theme_location' => 'sidr' ) ); ?-->
+
+        <div id="sidr">
           <ul>
             <li class="active"><a href="construction">Construcción</a></li>
             <li><a href="design">Diseño</a></li>
             <li><a href="real-estate">Servicio inmobiiario</a></li>
             <li><a href="resorts">Resorts exclusivos</a></li>
             <li><a href="friends">Amistad</a></li>
-          </ul-->
+          </ul>
         </div>
         <div id="header">
           <a href="<?php echo home_url('/'); ?>" id="logo">

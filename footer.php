@@ -57,6 +57,9 @@ function setArrowFunc() {
     jQuery(".arrow_r").css('left',x);
     }
 });
+jQuery(function(){
+  jQuery('div.menu-sidr-container').attr('id', 'sidr');
+});
 
 // --CONSTRUCTION SLIDER--
 jQuery(function() {

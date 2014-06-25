@@ -44,8 +44,11 @@ body{
     left:0px;
     bottom:0px;
 }
-body.page-id-57{
-    width:8000px;å
+body.page-id-57, body.page-id-63{
+    width:8000px;
+}
+body.page-id-108 {
+    width:9600px;
 }
 #header {
     background: rgba(0,0,0,.2);

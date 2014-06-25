@@ -42,7 +42,10 @@ jQuery(function() {
 });
 
 // --SIDR--
+
+
 jQuery(function() {
+    jQuery('.menu-nav-container').attr("id", "sidr");
     jQuery('#simple-menu').sidr();
     });
 jQuery(function(){
@@ -57,9 +60,8 @@ function setArrowFunc() {
     jQuery(".arrow_r").css('left',x);
     }
 });
-jQuery(function(){
-  jQuery('div.menu-sidr-container').attr('id', 'sidr');
-});
+
+
 
 // --CONSTRUCTION SLIDER--
 jQuery(function() {

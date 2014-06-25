@@ -27,9 +27,9 @@
         }
     </style>
     <body>
-        <!--?php wp_nav_menu( array ( 'theme_location' => 'sidr' ) ); ?-->
+        <?php wp_nav_menu( array ( 'theme_location' => 'sidr' ) ); ?>
 
-        <div id="sidr">
+        <!--div id="sidr">
           <ul>
             <li class="active"><a href="construction">Construcción</a></li>
             <li><a href="design">Diseño</a></li>
@@ -37,7 +37,7 @@
             <li><a href="resorts">Resorts exclusivos</a></li>
             <li><a href="friends">Amistad</a></li>
           </ul>
-        </div>
+        </div-->
         <div id="header">
           <a href="<?php echo home_url('/'); ?>" id="logo">
             <img src="http://localhost:8888/test/wordpress/wp-content/uploads/2014/06/logoLu.png" alt="Best Costa logo">

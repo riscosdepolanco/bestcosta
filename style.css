@@ -410,9 +410,9 @@ a:hover img.arrow_wh_r {
   opacity:1;
 }
 /*-- NAVIGATION--*/
-.sidr {
+div.sidr {
   top:79px;
-  width:180px;
+  width:202px;
   font-family: inherit;
   font-size: 11px;
 }
@@ -440,6 +440,9 @@ a:hover img.arrow_wh_r {
 }
 #simple-menu .line__first {
   margin-top: 10px;
+}
+.sidr li.menu-item:first-child {
+  border-top:0;
 }
 
 /*-- Fullsize background --*/

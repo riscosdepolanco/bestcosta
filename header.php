@@ -26,7 +26,7 @@
             text-decoration:underline;
         }
     </style>
-    <body>
+    <body <?php body_class($class); ?>>
         <?php wp_nav_menu( array ( 'theme_location' => 'sidr' ) ); ?>
 
         <!--div id="sidr">

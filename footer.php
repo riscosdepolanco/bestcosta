@@ -18,12 +18,14 @@
 <script language="javascript" type="text/javascript">
 
 // --HEADER--
-jQuery(function(){
+/*jQuery(function(){
 jQuery('#header').show().animate({
 width: "100%"
 },1000);
 });
 
+Header の動きがつけたければ、ここのコメントと、headerのbackground、.sidrのpadding-topをとる。
+*/
 // --ARROW--
 jQuery(function() {
     jQuery('ul.nav a, .arrow_r').bind('click',function(event){
@@ -39,6 +41,16 @@ jQuery(function() {
         }, 1100);
         event.preventDefault();
     });
+});
+
+
+//-- HOVER EFFECT--//
+jQuery(function() {
+	jQuery(".section").hover(function() {
+             jQuery(this).find("h2,.description,.quote").stop().animate({ opacity: "1"}, 900);//ONマウス時の背景色
+             },function() {
+             jQuery(this).find("h2,.description,.quote").stop().animate({ opacity: "0" }, 900);//OFFマウス時の背景色
+             });
 });
 
 // --SIDR--
